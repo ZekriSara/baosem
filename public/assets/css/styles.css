@@ -1,0 +1,458 @@
+
+  
+  .animated-button1 {
+    /** background: linear-gradient(-30deg, #3d0b0b 50%, #2b0808 50%);**/
+    background: #f79e1a;
+    padding: 20px 40px;
+   
+    display: inline-block;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    overflow: hidden;
+    color: #000839;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+             border-radius:40px 10px;
+             width:98% ;
+             
+             height:42px;
+             line-height:10px; 
+             
+  }
+  
+  .animated-button1::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #FE7700;
+    opacity: 0;
+    -webkit-transition: .2s opacity ease-in-out;
+    transition: .2s opacity ease-in-out;
+  }
+  
+  .animated-button1:hover::before {
+    opacity: 0.2;
+    background:  #FE7700;
+  }
+  
+  .animated-button1 span {
+    position: absolute;
+  }
+  
+  .animated-button1 span:nth-child(1) {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(43, 8, 8, 0)), to(#FD571A));
+    background: linear-gradient(to left, rgba(43, 8, 8, 0), #FD571A);
+    -webkit-animation: 2s animateTop linear infinite;
+            animation: 2s animateTop linear infinite;
+  }
+  
+  @keyframes animateTop {
+    0% {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+  }
+  
+  .animated-button1 span:nth-child(2) {
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 2px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(43, 8, 8, 0)), to(#FD571A));
+    background: linear-gradient(to top, rgba(43, 8, 8, 0), #FD571A);
+    -webkit-animation: 2s animateRight linear -1s infinite;
+            animation: 2s animateRight linear -1s infinite;
+  }
+  
+  @keyframes animateRight {
+    0% {
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+  }
+  
+  .animated-button1 span:nth-child(3) {
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(43, 8, 8, 0)), to(#FD571A));
+    background: linear-gradient(to right, rgba(43, 8, 8, 0), #FD571A);
+    -webkit-animation: 2s animateBottom linear infinite;
+            animation: 2s animateBottom linear infinite;
+  }
+  
+  @keyframes animateBottom {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    100% {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+  }
+  
+  .animated-button1 span:nth-child(4) {
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 2px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 8, 8, 0)), to(#FD571A));
+    background: linear-gradient(to bottom, rgba(43, 8, 8, 0), #FD571A);
+    -webkit-animation: 2s animateLeft linear -1s infinite;
+            animation: 2s animateLeft linear -1s infinite;
+  }
+  
+  @keyframes animateLeft {
+    0% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+    100% {
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+  }
+ 
+  .fa{
+    color:#ffa41b;
+  }
+  #label{
+    background-color:rgba(0,191,255,0.6) ;border-radius:40px 10px;border: 1px solid #40bad5;width:80%;margin:1px 0 0 0;color:#000839; 
+    font-size:14px;  font-weight: bold;
+  }
+  #card{
+    margin:10px; border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #card2{
+    margin:10px -6px 10px -6px; border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #card3{
+    margin:10px; border-radius: 5px;background-color: #FBF8F2;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+   
+  }
+  
+  .card2{
+    margin:10px; border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+   
+    border-color: #fcd09a; border-width: 1px;
+    
+  }
+  
+  #bouton {
+    background-color: #000839 ; border-radius:40px 10px;max-height: 30px; font-size:13px;margin:10px;color:white;
+    font-size:14px; 
+  }
+  #bouton:hover{
+    color:#A9F5F2;
+  }
+  #bouton2 {
+    background-color: #000839 ; border-radius:40px 10px;max-height: 30px; font-size:13px;margin:10px;color:white;
+    font-size:14px; 
+  }
+  #bouton2:hover{
+    color:#A9F5F2;
+  }
+  #bouton3 ,#bouton4{
+    background-color: #FFBF00 ; border-radius:40px 10px;max-height: 30px; font-size:13px;margin:10px;color:black;
+    font-size:13px; text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;font-weight: bold;
+  }
+  #bouton3:hover, #bouton4:hover{
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+  .md-outline.select-wrapper+label {
+    top: .5em !important;
+    z-index: 2 !important;
+    }
+    
+    html, body {
+      
+      overflow-x: hidden !important;
+       
+  }
+  a:link 
+  { 
+   text-decoration:none; 
+   color:#000839;
+  } 
+  a:hover{
+    color:white;
+  } 
+   th{
+       
+      text-align: center;
+      letter-spacing: .06em;
+      
+  }
+ select option:hover{
+      color:#A9F5F2;
+  }
+  #puce{
+    font-size:6.5px;margin:0 5px 0 2px;
+    color:#FF8C00;
+
+  }
+  #puce1{
+    font-size:6.5px;margin:0 5px 0 2px;
+    color:#FFBF00;
+
+  }
+  #puce2{
+    font-size:6.5px;margin:0 5px 0 2px;
+    color:#FFA500;
+
+  }
+  
+  #abtn1 , #abtn2
+{
+    margin: 0 ;
+    padding: 0;
+     
+    border: 0;
+    background: none; 
+    
+    line-height: 20%;
+  
+}
+#abtn1:hover, #abtn2:hover{
+  color:white;
+}
+#abtn1:active , #abtn1:focus, #abtn2:active , #abtn2:focus{
+  outline:none;
+  
+}
+ .img{
+   width: 50px;
+   height:7px;
+ } 
+
+
+ .col1, .col5  {
+  float: left;
+  width: 20%;
+  padding: 20px 0 20px 0 ;
+  
+}
+.col2, .col6 {
+  float: left;
+  width: 30%;
+  padding: 20px 0 20px 0 ;
+}
+.col3, .col7 {
+  float: left;
+  width: 25%;
+  padding: 20px 0 20px 0 ;
+}
+.col4, .col8 {
+  float: left;
+  width: 25%;
+  padding: 20px 0 20px 0 ;
+  
+}
+.col9, .col10{
+  float: left;
+  width: 40%;
+  padding: 20px 0 10px 0 ;
+  margin:-27px 5% 0 5% ;
+}
+.col1, .col2, .col3, .col4{
+  margin-top:-5px;
+}
+.col5, .col6, .col7, .col8{
+  margin-top:-27px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+ 
+}
+@media screen and (max-width:1050px) {
+  .col1,  .col3, .col4, .col6{
+    width:30%;
+  }
+  .col2, .col5{
+    width:40%;
+  }
+  .col1, .col2, .col3{
+    margin-top:-5px;
+  }
+  .col4, .col5, .col6{
+    margin-top:-27px;
+  }
+  
+  
+  .col7, .col8, .col9, .col10{
+    width: 50%;
+    margin-top:-27px;
+  }
+   
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 780px) {
+  .col1, .col2 {
+    width: 50%;
+    margin-top:-5px;
+  }
+  .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10 {
+    width: 50%;margin-top:-27px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .col1, .col2 {
+    width: 50%;
+    margin-top:-5px;
+  }
+  .col3, .col4, .col5, .col6, .col7, .col8 {
+    width: 50%;margin-top:-27px;
+  }
+  
+  .col9,.col10{
+    width: 70%;margin: -27px 15% 0 15%;
+  }
+  .col9{
+    padding: 20px 0 20px 0 ;
+  }
+}
+
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col1{
+    width: 80%;
+    margin: -5px 10% 0 10%;
+   
+  }
+  .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10 {
+    width:80%;
+    margin: -27px 10% 0 10%;
+  }
+  
+}
+.rowres{
+  background-color:#FFBF00;
+ 
+
+}
+.rowapp{
+  /*background-color: #ffa41b;*/
+  background-color: 	#FFA500;
+}
+.row1{
+  background-color: #FF8C00;
+}
+#button3:active, #button3:focus, #button4:active, #button4:focus{
+  outline: none !important;
+  box-shadow: none !important;
+
+  
+}
+
+
+.form-control {
+  min-height: 41px;
+background: #fff;
+box-shadow: none !important;
+border-color: #e3e3e3;
+}
+.form-control:focus {
+border-color: #70c5c0;
+}
+.form-control, .btn {        
+  border-radius: 2px;
+}
+.login-form {
+width: 100%;
+margin: 0 auto;
+padding: 100px 0 30px;	
+
+}
+.login-form form {
+color: #7a7a7a;
+
+border-radius: 2px;
+margin-bottom: 15px;
+  font-size: 13px;
+  background: #F2F2F2;
+  box-shadow: 0px 0px 0px 1px  rgba(0, 0, 0, 0.3);
+  padding: 30px;	
+  position: relative;	
+}
+.login-form h2 {
+font-size: 22px;
+  margin: 35px 0 25px;
+}
+.login-form .avatar {
+position: absolute;
+margin: 0 auto;
+left: 0;
+right: 0;
+top: -50px;
+width: 95px;
+height: 95px;
+border-radius: 50%;
+z-index: 9;
+background:#FF8C00;
+padding: 15px;
+/*box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.1);*/
+}
+.login-form .avatar .fas {
+width: 100%;
+}	
+.login-form input[type="checkbox"] {
+  margin-top: 2px;
+}
+.login-form .btn {        
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.card{
+   border-radius: 5px;background-color: #FAFAFA;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+ 
+   border-width: 1px;
+  
+}
+
+.form-group input{
+  border-radius:20px;
+}
+#fichier{
+  background-color: #000839 ; border-radius:20px;max-height: 30px; font-size:13px;margin:10px;color:white;
+    font-size:14px;
+}
+.form-control{
+   border-radius:20px;
+}
